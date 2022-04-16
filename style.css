@@ -61,7 +61,7 @@ img {
   text-transform: uppercase;
   font-weight: normal;
 }
-.buttom {
+.button {
   font-size: 1.4rem;
   background-color: #0bd;
   color: white;
@@ -184,11 +184,92 @@ aside p {
   border-bottom: 1px #ddd solid;
 }
 .sub-menu a {
-  color #432;
+  color: #432;
   padding: 10px;
   display: block;
 }
 .sub-menu a:hover {
   color: #0bd;
-  transition: 0.2s배;
+  transition: 0.2s;
+}
+/* 메뉴 */
+#menu {
+  background-image: url(images/menu-bg.jpg);
+  min-height: 100vh;
+}
+.menu-content{
+  max-width: 560px;
+  margin-top: 10%;
+}
+/* 메뉴 컨텐츠의 자식인 페이지 타이틀 */
+.menu-content .page-title {
+  text-align: center;
+}
+.menu-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+#contact {
+  background-image: url(images/contact-bg.jpg);
+  min-height: 100vh;
+}
+form div {
+  margin-bottom: 14px;
+}
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+input[type='text'],
+input[type='email'],
+textarea {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+.short-message {
+  margin-bottom: 50px;
+}
+input[type='submit'] {
+  border: none;
+  cursor: pointer;
+}
+#location .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.location-info {
+  width: 20%;
+}
+.location-map {
+  margin-top: 10px;
+  width: 75%;
+}
+.location-info p {
+  padding: 12px 10px;
+}
+
+#sns {
+  background-color: #faf7f0;
+  padding: 4% 0;
+}
+#sns .wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+#sns .sub-title {
+  margin-bottom: 30px;
+}
+.sns-box {
+  width: 30%;
 }
